@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
 
-# From template
-set -o errexit
-set -o nounset
-set -o pipefail
+set -o errexit; set -o nounset; set -o pipefail;
 if [[ "${TRACE-0}" == "1" ]]; then
     set -o xtrace
 fi
-
-# Actual script starts here
 
 # Run the below inside the /Music directory
 find -regex ".*\.mp3$" \                                            # Get all mp3 files

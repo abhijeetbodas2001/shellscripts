@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
 
-# From template
-set -o errexit
-set -o nounset
-set -o pipefail
+set -o errexit; set -o nounset; set -o pipefail;
 if [[ "${TRACE-0}" == "1" ]]; then
     set -o xtrace
 fi
-
-# Actual script starts here
 
 # Scrapes the All India Radio page source for national news in regional
 # languages, and outputs the URL to the mp3 files for news in given
