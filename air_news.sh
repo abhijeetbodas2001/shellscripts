@@ -11,12 +11,9 @@ fi
 
 curl -s https://newsonair.gov.in/nsd-audio.aspx > /tmp/air_news
 
-# The files have dates in them, but the format is wierd
-# It is YYYYMMDD, but if DD is between 01 and 09, only one
-# digit is used for the date. For example, 20221102 will be
-# mentioned as 2022112 in the file name.
-# The following line gets today's date in this wierd format.
-date=$(date +%Y%m%d | sed "s/\(\([0-9]\)\{6\}\)0\([1-9]\)/\1\3/")
+# Remove zeroes in the month and day numbers, because that's
+# the format used in the files names on the server
+date=$(date +%Y)$(date +%Y%m%d | sed "s/20[0-9][0-9]//g" | sed "s/0//g")
 
 # Grab the link to the audio file from the page source for each
 # of the following languages.
