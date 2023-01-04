@@ -19,6 +19,7 @@ for dir in\
     "academic"\
     "archive"\
     "games"\
+    "misc"\
     "Music"\
     "Pictures"\
     "Public"\
