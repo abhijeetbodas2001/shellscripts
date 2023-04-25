@@ -16,18 +16,21 @@ CmyDataPath="/mnt/c/myData"
 # Dirs with many changes (which give long outputs on running
 # the script) kept at the end of the list
 for dir in\
-    "academic"\
-    "archive"\
-    "games"\
-    "misc"\
+    "AsusScreenshots"\
+    "AsusSoundRecorder"\
     "Music"\
     "Pictures"\
     "Public"\
     "Screenshots"\
     "Templates"\
-    "notes"\
     "Videos"\
-    "Webcam"
+    "Webcam"\
+    "WhatsApp"\
+    "academic"\
+    "archive"\
+    "games"\
+    "misc"\
+    "notes"
 do
     printf "\n\n"
     echo "Starting "$dir" ----------------------------------------"
