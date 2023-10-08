@@ -20,4 +20,4 @@ if [[ "${TRACE-0}" == "1" ]]; then
 fi
 
 # Change to the script's directory
-# cd "$(dirname "$0")"
+cd "$(dirname "$0")"
